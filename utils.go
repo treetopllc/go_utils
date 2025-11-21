@@ -5,12 +5,13 @@ import (
 	"encoding/binary"
 	"errors"
 	. "fmt"
-	go_deepcopy "github.com/margnus1/go-deepcopy"
-	gouuid "github.com/nu7hatch/gouuid"
 	"net/http"
 	"reflect"
 	"strings"
 	"time"
+
+	gouuid "github.com/nu7hatch/gouuid"
+	go_deepcopy "github.com/treetopllc/go-deepcopy"
 )
 
 const (
@@ -174,6 +175,7 @@ func Dashes(repeatCount int, args ...interface{}) string {
 
 //	A: 65
 //	B: 66
+//
 // . . .
 func PrintAlphabet() {
 	var thisChar string
